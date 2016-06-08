@@ -41,6 +41,7 @@ public class Main extends Application {
 	public static void main(String[] args) throws SQLException {
 		launch(args);
 		// initEntityManager();
+		System.out.println("hallo");
 	}
 
 	public static void initEntityManager() throws SQLException {
