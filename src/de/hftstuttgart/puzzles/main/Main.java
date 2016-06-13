@@ -31,6 +31,7 @@ public class Main extends Application {
 			Scene scene = new Scene(personOverview);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Puzzles-CRM-Software");
+			primaryStage.setResizable(false);
 			primaryStage.show();
 
 		} catch (Exception e) {
@@ -41,13 +42,12 @@ public class Main extends Application {
 	public static void main(String[] args) throws SQLException {
 		launch(args);
 		// initEntityManager();
-		System.out.println("hallo");
 	}
 
 	public static void initEntityManager() throws SQLException {
 		Connection connection = DriverManager.getConnection("jdbc:mysql:193.196.143.168/?user=" + "aj6s-gruppe4");
 		Statement stmt = connection.createStatement();
-		stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + "aj6s-gruppe4");
+		//stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + "aj6s-gruppe4");
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("META_INF/persistence.xml");
 		em = emf.createEntityManager();
 	}

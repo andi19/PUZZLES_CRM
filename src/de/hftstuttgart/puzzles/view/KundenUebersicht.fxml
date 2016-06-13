@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="800.0"
 	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
-	fx:controller="de.hftstuttgart.puzzles.controller.KundenübersichtController">
+	fx:controller="de.hftstuttgart.puzzles.controller.KundenUebersichtController">
 	<!-- TODO Add Nodes -->
 	<children>
 		<Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="800.0">

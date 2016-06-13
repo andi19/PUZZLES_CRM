@@ -25,12 +25,12 @@ public class Auftrag {
 	@Column(name="ARTIKELLISTE")
 	private List<Artikeleinheit> mArtikelliste;
 	@Column(name="DATUM")
-	private Date mDatum;
+	private String mDatum;
 	@Column(name="STATUS")
 	private Status mStatus;
 
 	public Auftrag(String auftragsnummer, Kunde kunde,
-			List<Artikeleinheit> artikelListe, Date datum, String notiz) {
+			List<Artikeleinheit> artikelListe, String datum, String notiz) {
 		this.mAuftragsnummer = auftragsnummer;
 		this.mKunde = kunde;
 		this.mArtikelliste = artikelListe;
@@ -63,11 +63,11 @@ public class Auftrag {
 		this.mAuftragsnummer = auftragsnummer;
 	}
 
-	public Date getDatum() {
+	public String getDatum() {
 		return mDatum;
 	}
 
-	public void setDatum(Date datum) {
+	public void setDatum(String datum) {
 		this.mDatum = datum;
 	}
 

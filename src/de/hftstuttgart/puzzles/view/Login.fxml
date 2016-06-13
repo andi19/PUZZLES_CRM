@@ -20,9 +20,9 @@
 					</font>
 				</Label>
 				<TextField fx:id="MitarbeiterIDTextfeld" layoutX="133.0"
-					layoutY="86.0" onAction="#MitarbeiterIDtext" prefWidth="200.0" />
+					layoutY="86.0" prefWidth="200.0" />
 				<PasswordField fx:id="Passwortfeld" layoutX="133.0"
-					layoutY="126.0" onAction="#passwort" prefWidth="200.0" />
+					layoutY="126.0" prefWidth="200.0" />
 				<Label layoutX="49.0" layoutY="89.0" text="MitarbeiterID:" />
 				<Label layoutX="49.0" layoutY="129.0" text="Passwort:" />
 				<Button fx:id="loginButton" layoutX="305.0" layoutY="160.0"
