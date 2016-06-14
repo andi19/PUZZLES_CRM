@@ -39,8 +39,11 @@
 							strokeType="INSIDE" width="1000.0" />
 					</children>
 				</Pane>
-				<TableView layoutX="14.0" layoutY="96.0" prefHeight="382.0"
+				<TableView fx:id="auftragsTableView" layoutX="14.0" layoutY="96.0" prefHeight="382.0"
 					prefWidth="679.0">
+					<placeholder>
+					<Label text="Keine Auftraege vorhanden" />
+					</placeholder>
 					<columns>
 						<TableColumn maxWidth="5000.0" minWidth="10.0"
 							prefWidth="161.0" text="Auftragsnummer" />

@@ -3,11 +3,14 @@ package de.hftstuttgart.puzzles.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -23,6 +26,7 @@ public class Auftrag {
 	@Column(name="KUNDE")
 	private Kunde mKunde;
 	@Column(name="ARTIKELLISTE")
+	@OneToMany (mappedBy = "AUFTRAG_TABLE", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	private List<Artikeleinheit> mArtikelliste;
 	@Column(name="DATUM")
 	private String mDatum;

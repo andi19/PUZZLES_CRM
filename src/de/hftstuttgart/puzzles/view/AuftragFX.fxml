@@ -20,6 +20,9 @@
         <Button fx:id="mAbbrechen" layoutX="217.0" layoutY="354.0" mnemonicParsing="false" onAction="#abbrechen" prefHeight="25.0" prefWidth="125.0" text="Abbrechen" />
         <Button fx:id="mAuftragAnlegen" layoutX="429.0" layoutY="321.0" mnemonicParsing="false" onAction="#auftragAnlegen" prefHeight="55.0" prefWidth="125.0" text="Auftrag anlegen" />
         <TableView layoutX="38.0" layoutY="145.0" prefHeight="143.0" prefWidth="516.0">
+        <placeholder>
+		<Label text="Keine Artikel vorhanden" />
+		</placeholder>
           <columns>
             <TableColumn prefWidth="120.0" text="Artikel" />
             <TableColumn prefWidth="140.0" text="Beschreibung" />

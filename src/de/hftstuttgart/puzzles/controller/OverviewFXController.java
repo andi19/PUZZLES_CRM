@@ -1,16 +1,23 @@
 package de.hftstuttgart.puzzles.controller;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+import javax.swing.text.TableView;
+
+import de.hftstuttgart.puzzles.utilities.AuftragUtility;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class OverviewFXController {
+public class OverviewFXController implements Initializable {
+	
 	private static Stage stage;
 	@FXML
 	private Button uebersicht;
@@ -26,7 +33,9 @@ public class OverviewFXController {
 	private Button Neuausdrucken;
 	@FXML
 	private Button Löschen;
-
+	@FXML
+	//private TableView auftragsTableView;
+	
 	private Parent root;
 
 	// Event Listener on Button[#Übersicht].onAction
@@ -98,5 +107,11 @@ public class OverviewFXController {
 
 	public static Stage getStage() {
 		return stage;
+	}
+	
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+		System.out.println("hallo");
+		//AuftragUtility.loadAllAuftraege();
 	}
 }
